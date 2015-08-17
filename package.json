@@ -1,0 +1,27 @@
+{
+  "name": "domain-checker",
+  "version": "1.0.0",
+  "description": "Check domain's  status,so that I can register good domain",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h1bomb/domainChecker.git"
+  },
+  "keywords": [
+    "domain",
+    "check",
+    "register"
+  ],
+  "author": "hbomb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/h1bomb/domainChecker/issues"
+  },
+  "homepage": "https://github.com/h1bomb/domainChecker#readme",
+  "dependencies": {
+    "request": "^2.60.0"
+  }
+}

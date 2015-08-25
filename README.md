@@ -16,6 +16,6 @@ For fun!
 
 todo list
 ============
-
+* use promise
 * store useful domain on disk
 * make CLI user experience friendly 

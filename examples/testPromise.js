@@ -1,7 +1,9 @@
-var req = require('request');
-var Promise = require('bluebird');
-Promise.promisifyAll(req);
+var Ck = require('../lib/checkerP');
 
-req.getAsync('http://163.com').then(function(ret, body) {
-    console.log(ret[1]);
-})
+var ck = new Ck();
+
+ck.check('zhouqiqisaxa.xyz').then(function(args) {
+    console.log(args);
+}).catch(function(err) {
+    console.log(err);
+});

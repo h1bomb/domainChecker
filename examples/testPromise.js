@@ -7,3 +7,5 @@ ck.check('zhouqiqisaxa.xyz').then(function(args) {
 }).catch(function(err) {
     console.log(err);
 });
+
+ck.wgRun(2);

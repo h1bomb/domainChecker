@@ -1,0 +1,31 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var program = require('commander');
+var Ck = require('../index');
+
+var ck = new Ck();
+
+
+program
+    .version('0.0.1')
+    .option('-n, --name [name]', 'check one domain [name]', 'name')
+    .option('-c, --len [number]', 'domain length [number]', 'number')
+    .parse(process.argv);
+
+console.log('you check domain with:');
+if (program.name) {
+    ck.check(program.name, function(error, response, body) {
+        if (!error) {
+            console.log(body);
+        } else {
+            console(error);
+        }
+    })
+
+} else if (program.len) {
+    ck.wgRun(program.len);
+}
